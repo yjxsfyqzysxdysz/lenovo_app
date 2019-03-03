@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <!-- <link rel="stylesheet" href="css/header2.css"> -->
+  <!-- <link rel="stylesheet" href="css/footer2.css"> -->
+  <link rel="stylesheet" href="css/shopping_trolley.css">
+</head>
+
+<body>
+  <!-- 顶部黑边 -->
+  <header></header>
+
+  <!-- logo -->
+  <div class="top_logo clearfix">
+    <img src="./img/shopping_trolley/pic-13.jpg" alt="">
+    <img src="./img/shopping_trolley/pic-12.jpg" alt="">
+  </div>
+
+  <!-- main -->
+  <div class="buycart">
+    <!-- 购物车列表 -->
+    <div id="cart_main">
+      <!-- 无商品 -->
+      <!-- DOM树重写 -->
+      <!-- 表头部分 -->
+      <div class="bc_table" style="display: block;">
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th colspan="3" width="37%">商品</th>
+              <th width="14%">规格</th>
+              <th width="13%">单价</th>
+              <th width="13%">数量</th>
+              <th width="13%">金额</th>
+              <th width="10%">操作</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- 主体部分 -->
+      <div class="bc_nopro clearfix" style="display: block;">
+        <!-- 图片 -->
+        <h3>您的购物车内暂无商品,您可以</h3>
+        <!-- 按钮 -->
+        <div class="bc_no_btn">
+          <a href="/" class="redhover">选购商品</a>
+        </div>
+      </div>
+
+
+
+      <!-- 有商品时 DOM树重写 -->
+      <!-- 第一列 选择框 -->
+      <div class="bc_option clearfix" style="display: none;">
+        <!-- 当选中之后,加上class:"active" -->
+        <div class="bc_all clearfix">
+          <a href="javascript:;" id="chooseall"></a>
+          <span></span>
+        </div>
+      </div>
+      <!-- 列表主体 -->
+      <div class="bc_table" id="main_table" style="display: none;">
+        <!-- 表头 -->
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th colspan="3" width="462">商品</th>
+              <th width="163">规格</th>
+              <th width="152">单价</th>
+              <th width="152">数量</th>
+              <th width="152">金额</th>
+              <th width="117">操作</th>
+            </tr>
+          </tbody>
+        </table>
+        <!-- 内容 -->
+        <table cellpadding="0" cellspacing="0">
+          <tbody>
+
+            <tr>
+              <!-- 选项 -->
+              <td width="57" class="bc_table_sel">
+                <a href="javascript:;"></a>
+              </td>
+              <!-- 商品_图片 -->
+              <td width="148" class="bc_table_img">
+                <a href="javascript:;">
+                  <img src="./img/product/mini/001.jpg" alt="">
+                </a>
+                <div class="bc_zhezhao"></div>
+              </td>
+              <!-- 商品_名称 -->
+              <td width="257" class="bc_proname bc_name_gift">
+                <a href="javascript:;" class="redhover">联想 Watch X 米兰尼斯款 黑色</a>
+              </td>
+              <!-- 规格 -->
+              <td width="163"></td>
+              <!-- 单价 -->
+              <td width="152" style="position:relative;">
+                <span class="current_price">299.00</span>
+                <!--满减-->
+              </td>
+              <!-- 数量 -->
+              <td width="152">
+                <!-- 数量按钮 区域 -->
+                <label class="i_box clearfix">
+                  <!-- 按钮 - -->
+                  <input class="pro_less J_minus" type="button" value="-" latag="latag_pc_shopcart_carNumDel_1000601">
+                  <!-- 输入窗口 -->
+                  <input class="pro_num J_input" maxnum="100" type="text" value="1" style="ime-mode: disabled;" val="1">
+                  <!-- 按钮 + -->
+                  <input class="pro_add J_add" maxnum="100" type="button" value="+" latag="latag_pc_shopcart_carNumAdd_1000601">
+                </label>
+              </td>
+              <!-- 金额 -->
+              <td width="152" class="bc_red">269.00</td>
+              <!-- 操作  -->
+              <td width="117" style="text-align:left">
+                <a href="javascript:;" class="redhover" title="删除">删除</a>
+                <br>
+                <a href="javascript:;" class="redhover" title="收藏">移入收藏夹</a>
+              </td>
+            </tr>
+            <tr>
+              <!-- 选项 -->
+              <td width="57" class="bc_table_sel">
+                <a href="javascript:;"></a>
+              </td>
+              <!-- 商品_图片 -->
+              <td width="148" class="bc_table_img">
+                <a href="javascript:;">
+                  <img src="./img/product/mini/001.jpg" alt="">
+                </a>
+                <div class="bc_zhezhao"></div>
+              </td>
+              <!-- 商品_名称 -->
+              <td width="257" class="bc_proname bc_name_gift">
+                <a href="javascript:;" class="redhover">联想 Watch X 米兰尼斯款 黑色</a>
+              </td>
+              <!-- 规格 -->
+              <td width="163"></td>
+              <!-- 单价 -->
+              <td width="152" style="position:relative;">
+                <span class="current_price">299.00</span>
+                <!--满减-->
+              </td>
+              <!-- 数量 -->
+              <td width="152">
+                <!-- 数量按钮 区域 -->
+                <label class="i_box clearfix">
+                  <!-- 按钮 - -->
+                  <input class="pro_less J_minus" type="button" value="-" latag="latag_pc_shopcart_carNumDel_1000601">
+                  <!-- 输入窗口 -->
+                  <input class="pro_num J_input" maxnum="100" type="text" value="1" style="ime-mode: disabled;" val="1">
+                  <!-- 按钮 + -->
+                  <input class="pro_add J_add" maxnum="100" type="button" value="+" latag="latag_pc_shopcart_carNumAdd_1000601">
+                </label>
+              </td>
+              <!-- 金额 -->
+              <td width="152" class="bc_red">269.00</td>
+              <!-- 操作  -->
+              <td width="117" style="text-align:left">
+                <a href="javascript:;" class="redhover" title="删除">删除</a>
+                <br>
+                <a href="javascript:;" class="redhover" title="收藏">移入收藏夹</a>
+              </td>
+            </tr>
+            <tr>
+              <!-- 选项 -->
+              <td width="57" class="bc_table_sel">
+                <a href="javascript:;"></a>
+              </td>
+              <!-- 商品_图片 -->
+              <td width="148" class="bc_table_img">
+                <a href="javascript:;">
+                  <img src="./img/product/mini/001.jpg" alt="">
+                </a>
+                <div class="bc_zhezhao"></div>
+              </td>
+              <!-- 商品_名称 -->
+              <td width="257" class="bc_proname bc_name_gift">
+                <a href="javascript:;" class="redhover">联想 Watch X 米兰尼斯款 黑色</a>
+              </td>
+              <!-- 规格 -->
+              <td width="163"></td>
+              <!-- 单价 -->
+              <td width="152" style="position:relative;">
+                <span class="current_price">299.00</span>
+                <!--满减-->
+              </td>
+              <!-- 数量 -->
+              <td width="152">
+                <!-- 数量按钮 区域 -->
+                <label class="i_box clearfix">
+                  <!-- 按钮 - -->
+                  <input class="pro_less J_minus" type="button" value="-" latag="latag_pc_shopcart_carNumDel_1000601">
+                  <!-- 输入窗口 -->
+                  <input class="pro_num J_input" maxnum="100" type="text" value="1" style="ime-mode: disabled;" val="1">
+                  <!-- 按钮 + -->
+                  <input class="pro_add J_add" maxnum="100" type="button" value="+" latag="latag_pc_shopcart_carNumAdd_1000601">
+                </label>
+              </td>
+              <!-- 金额 -->
+              <td width="152" class="bc_red">269.00</td>
+              <!-- 操作  -->
+              <td width="117" style="text-align:left">
+                <a href="javascript:;" class="redhover" title="删除">删除</a>
+                <br>
+                <a href="javascript:;" class="redhover" title="收藏">移入收藏夹</a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+      <!-- 统计区域 -->
+      <div class="bc_num clearfix" style="display: none;">
+        <!-- 左侧checked -->
+        <div class="bc_num_fl">
+          <!-- 全选按钮 -->
+          <div class="bc_all clearfix">
+            <a href="javascript:;"></a>
+            <span>全选</span>
+          </div>
+          <!-- 删除按钮 -->
+          <a href="javascript:;" class="bc_num_del">删除选中商品</a>
+        </div>
+        <!-- 右侧 价格总计 -->
+        <ul class="bc_num_fr">
+          <li style="margin-top:0;">商品总价：￥ 0.00 </li>
+          <!-- <li>优惠节省： </li> -->
+          <li>合计：
+            <span class="bc_red" id="totalmoneyf">269.00 </span>
+          </li>
+        </ul>
+      </div>
+      <!-- 结算按钮 -->
+      <div class="bc_probtn clearfix" style="display: none;">
+        <a href="settlement.html" title="去结算" id="submit">去结算</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <!-- 第一层 -->
+  <footer></footer>
+  <script src="js/header2.js"></script>
+  <script src="js/footer2.js"></script>
+  <script src="js/shopping_trolley.js"></script>
+</body>
+
+</html>

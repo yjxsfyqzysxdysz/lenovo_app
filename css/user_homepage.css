@@ -1,0 +1,679 @@
+/*黑线下区域设置*/
+.user_pace{
+    margin: 0 auto;
+    position: relative;
+    min-height:600px;
+    width: 1200px;
+}
+/*用户页面导览栏*/
+.user_location{
+    width: 1188px;
+    margin: 0 auto;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    background: #eee;
+    padding-left: 12px;
+}
+.user_location a {
+    color: #000;
+    margin: 0 5px;
+}
+.user_location a:hover{
+    color:#f00;
+}
+/*导览栏下主页面*/
+.user_main_page{
+    width: 1200px;
+    margin: 28px auto 35px;
+}
+/*左侧目录*/
+.user_page_lf{
+    width: 150px;
+    border: 1px solid #d9d8d6;
+    float: left;
+}
+
+#user_leftbox {
+    width: 150px;
+    font-family: arial,"微软雅黑",sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+#user_leftbox h3 {
+    border-top: 1px solid #d9d8d6;
+    height: 32px;
+    line-height: 32px;
+    background: #eee;
+    padding-left: 32px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+}
+#user_leftbox h3 span {
+    float: left;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+}
+#user_leftbox h3 i {
+    float: left;
+    display: block;
+    width: 9px;
+    height: 6px;
+    background: url(../img/user/usericon.png) -16px -3px;
+    margin: 13px 0 0 10px;
+}
+#user_leftbox li {
+    height: 31px;
+    line-height: 31px;
+    padding-left: 32px;
+    font-size: 13px;
+    border-top: 1px solid #d9d8d6;
+}
+#user_leftbox li a {
+    color: #6f7170;
+}
+
+/*右侧主页*/
+.user_page_rt{
+    float: right;
+    width: 1032px;
+    position: relative;
+    /* border: 1px solid #f00; */
+
+}
+.msg_right_notice{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: -30px;
+}
+.msg_right_notice a {
+    margin-left: 40px;
+    float: right;
+}
+.msg_right_notice em {
+    width: 20px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 4px;
+    background: url(../img/user/css_sprite.png) -250px 1px no-repeat;
+    cursor: pointer;
+}
+.msg_right_notice span{
+    color: #f00;
+}
+.content_right_top{
+    width: 100%;
+    height: 192px;
+}
+.content_right_middle{
+    width: 100%;
+    height: auto;
+    border: 1px solid #d2d2d2;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+
+/* 左侧个人信息栏区域设置 */
+.top_left{
+    width: 312px;
+    height: 174px;
+    float: left;
+    border-radius: 16px;
+    padding: 18px 20px 0;
+    color: #E6DBC0;
+    font-size: 14px;
+    position: relative;
+    background: url(../img/user/red_card_bg.png) no-repeat center;
+    background-size: cover;
+}
+/* 个人信息上部区域 */
+.user_head{
+    height: 48px;
+    text-align: center;
+}
+/* 头像区域 */
+.user_head_icon{
+    width: 48px;
+    float: left;
+}
+/* 信息区域 */
+.user_head_msg{
+    float: left;
+    margin-left: 8px;
+}
+/* 签到区域 */
+.user_head_qiandao{
+    float: right;
+    margin-top: 2px;
+}
+/* 头像设置 */
+.user_head img {
+    width: 100%;
+    height: 100%;
+    border-radius: 106px;
+    z-index: 2;
+}
+/* 编辑资料   鼠标移入事件*/
+#editmask{
+    width: 48px;
+    height: 48px;
+    margin-top: -48px;
+    line-height: 20px;
+    border-radius: 48px;
+    font-size: 12px;
+    color: #fff;
+    z-index: 20;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    /* opacity: 0.3; */
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.userName{
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+    width: 200px;
+    text-align: left;
+}
+.ell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 会员身份 */
+.userIdentity{
+    color: #fff;
+    border: 1px solid #fff;
+    line-height: 14px;
+    border-radius: 14px;
+    margin-top: 6px;
+    padding: 3px 11px;
+    float: left;
+}
+a.user_qiandao{
+    display: block;
+    padding: 3px 7px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.14px;
+}
+.user_middle{
+    margin-top: 18px;
+    height: 24px;
+    line-height: 24px;
+}
+.userMyId {
+    width: 180px;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+}
+.user_middle .userWay {
+    float: right;
+    color: #fff;
+}
+.goUCenter_icon{
+    width: 24px;
+    height: 24px;
+    float: right;
+    background:url(../img/user/white_next.png) no-repeat center;
+    background-size: cover;
+}
+.goUCenter_text{
+    float: right;
+}
+.user_top{
+    position: absolute;
+    left: 20px;
+    bottom: 14px;
+    width: 312px;
+}
+.user_top a {
+    display: block;
+    width: 33%;
+    text-align: center;
+    float: left;
+    color: #ffffff;
+}
+.user_top p {
+    color: #ffffff;
+    font-size: 14px;
+}
+.user_top>a p:last-child{
+    font-size: 16px;
+}
+/* 左侧中间区域 */
+.top_middle{
+    width: 352px;
+    height: 190px;
+    border: 1px solid #d2d2d2;
+    margin-left: 22px;
+    float: left;
+    border-radius: 5px;
+}
+.top_middle_up{
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #d2d2d2;
+    line-height: 14px;
+}
+
+.top_middle_buttom{
+    margin: 20px 50px;
+}
+.top_middle_buttom_text{
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    margin: 0;
+}
+.pl{
+    width:110px;
+    height: 100%;
+    float: left;
+}
+.top_middle_buttom p{
+    font-size:14px;
+}
+.top_middle_buttom_text  .pr{
+    float: right;
+    width: 60px;
+    text-align: right;
+}
+#top_m_b_coun{
+    color:#f00;
+}
+/* 左侧右边区域 */
+.top_right{
+    width: 278px;
+    height: 190px;
+    border: 1px solid #d2d2d2;
+    margin-left: 22px;
+    float: left;
+    border-radius: 5px;
+}
+/* 左侧右边上边 */
+.top_right_top{
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #d2d2d2;
+    line-height: 14px;
+}
+
+.top_right_top h3,.top_middle_top h3{
+    height: 14px;
+    padding-left: 12px;
+    border-left: 2px solid red;
+    margin-top: 12px;
+    margin-left: 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.top_middle_top{
+    width: 100%;
+    height: 28px;
+    border-bottom: 1px solid #d2d2d2;
+    line-height: 14px;
+}
+
+/* 左侧右边下边 */
+.top_right_buttom{
+    width: 278px;
+    height: 150px;
+    position: relative;
+}
+.top_right i{
+    width: 8px;
+    height: 12px;
+    float: right;
+    margin-top: -12px;
+    margin-right: 16px;
+    background: url(../img/user/css_sprite.png) -85px -72px no-repeat;
+    cursor: pointer;
+}
+/* 等待图标gif */
+.top_right_buttom_wait{
+    width: 100%;
+    height: 150px;
+    background:url(../img/user/wait.gif)  no-repeat center center;
+    display: none;
+}
+/* 没有优惠券 */
+.top_right_buttom_none{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    /* display: block; */
+    display: none;
+    font-size: 14px;
+}
+/* 有优惠券 */
+.top_right_buttom_box{
+    opacity: 1;
+    display: block;
+}
+/* 优惠券底图 */
+.coupon_img{
+    width: 708px;
+}
+/* 优惠券内容 */
+.coupon_item{
+    width: 176px;
+    height: 146px;
+    margin: 0 auto;
+    background: url(../img/user/coupon.png) no-repeat 0 0;
+    color: #fff;
+    float: left;
+    position: absolute;
+    margin-left: -94px;
+    left: 50%;
+    margin-top: -73px;
+    padding-left: 10px;
+    top: 50%;
+    display: block;
+    opacity: 1;
+}
+/* 价格区域 */
+.coupon_price{
+    font-size: 20px;
+    width: 100%;
+    height: 48px;
+}
+/* 价格样式 */
+.coupon_price span{
+    font-size: 28px;
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 8px;
+}
+/* 价格文字样式 */
+.coupon_text p{
+    line-height: 24px;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    /* 文本溢出包含元素时发生的事情 */
+    /* 显示省略符号来代表被修剪的文本 */
+    text-overflow: ellipsis;
+}
+/* 左右箭头区域 */
+.coupon_arrows{
+    width: 278px;
+    height: 150px;
+    position: relative;
+}
+/* 左右箭头样式 */
+.coupon_arrows_next,.coupon_arrows_prev{
+    display: block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    cursor: pointer;
+    top: 60px;
+}
+/* 右箭头 */
+.coupon_arrows_next{
+    background: url(../img/user/css_sprite.png)  -29px -71px no-repeat;
+    right: 8px;
+}
+/* 左箭头 */
+.coupon_arrows_prev{
+    background: url(../img/user/css_sprite.png)  0px -70px no-repeat;
+    left: 8px;
+}
+/* 我的订单 表头 */
+.right_middle_top{
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid #d2d2d2;
+}
+/* 我的订单 文字 */
+.right_middle_top_left_text{
+    width: 106px;
+    height: 16px;
+    float: left;
+    margin-left: 16px;
+}
+/* 左侧文字 */
+.right_middle_top_left_text h3{
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid red;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+    padding-left: 12px;
+    line-height: 16px;
+}
+/* 右侧文字 */
+.right_middle_top_right_text{
+    width: 100px;
+    height: 16px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 12px;
+    text-align: right;
+}
+/* 我的订单主体 */
+/* 没有订单 */
+.right_middle_buttom_none{
+    width: 98%;
+    height: 100px;
+    margin-left: 16px;
+    /* display: none; */
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 1;
+    display: block;
+}
+/* 等待 */
+.right_middle_buttom_wait{
+    width: 100%;
+    height: 100px;
+    background: url(../img/user/wait.gif) no-repeat center center;
+    display: none;
+}
+/* 有订单 */
+/* 有订单时，其父级 */
+.right_middle_bottom_exist{
+    width: 100%;
+}
+/* 订单 */
+.right_middle_bottom_exist_order{
+    width: 98%;
+    height: 100px;
+    margin-left: 16px;
+}
+/* 商品图片 */
+.exist_order_img{
+    width: 220px;
+    height: 110px;
+    float: left;
+    overflow: hidden;
+}
+/* 图片区域 */
+.goodsimg{
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+    margin-right: 5px;
+    float: left;
+}
+/* 图片样式 */
+.goodsimg img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+/* 商品名称 */
+.exist_order_name {
+    float: left;
+    height: 110px;
+    width: 180px;
+    line-height: 110px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+/* 商品名称 */
+.nowrap{
+    white-space: nowrap;
+}
+/* 数量 */
+.exist_order_num{
+    width: 100px;
+    height: 110px;
+    float: left;
+    line-height: 110px;
+    text-align: center;
+}
+/* 总价格 */
+.exist_order_allprice{
+    width: 100px;
+    height: 110px;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+}
+.exist_order_allprice>div{
+    width: 100%;
+    height: 20px;
+}
+/* 下单时间 */
+.exist_order_ordertime{
+    width: 170px;
+    height: 110px;
+    float: left;
+    line-height: 110px;
+    text-align: center;
+}
+
+/* 订单状态 */
+.exist_order_status{
+    width: 100px;
+    height: 110px;
+    float: left;
+    line-height: 110px;
+    text-align: center;
+}
+
+/* 查看（跳转页） */
+.exist_order_opt{
+    width: 100px;
+    height: 110px;
+    float: left;
+    line-height: 110px;
+    text-align: center;
+}
+/* 分割线 */
+.hline {
+    border-top: 1px dotted #d2d2d2;
+    margin-top: 8px;
+    width: 98%;
+    margin-left: 1%;
+}
+
+
+/* buttom 我关注的商品 */
+.content_right_buttom{
+    width: 100%;
+    height: 164px;
+    border: 1px solid #d2d2d2;
+    margin-top: 16px;
+    border-radius: 5px;
+}
+/* buttom 我关注的商品 表头 */
+.content_right_buttom_top{
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid #d2d2d2;
+}
+/* 左侧文字 */
+.right_buttom_top_left_text{
+    width: 106px;
+    height: 16px;
+    float: left;
+    margin-left: 16px;
+}
+.right_buttom_top_left_text h3{
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid red;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+    padding-left: 12px;
+    line-height: 16px;
+}
+/* 右侧文字 */
+.right_buttom_top_right_text{
+    width: 94px;
+    height: 16px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 12px;
+    text-align: right;
+}
+/* 我关注的商品 主体 */
+/* 没有商品 */
+.right_buttom_buttom_none{
+    width: 98%;
+    height: 100px;
+    margin-left: 16px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 1;
+    /* display: none; */
+}
+.right_buttom_buttom_none a{
+    text-decoration: underline !important;
+}
+/* 等待 */
+.right_buttom_buttom_wait{
+    width: 100%;
+    height: 100px;
+    background: url(../img/user/wait.gif) no-repeat center;
+    display: none;
+}
+.commodity_box{
+    overflow: hidden;
+    width: 1006px;
+}
+/* 订单 */
+.right_buttom_buttom_box{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 122px;
+    width: 100%;
+}
+.right_buttom_buttom_box ul {
+    height: 92px;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+
+.pl:hover,#msgs:hover{
+    color:#000;
+}
+.user_head_icon:hover #editmask{
+    display: block
+}
+/* 页尾设置 */
+.shop_footer{
+    padding-top: 10px;
+}

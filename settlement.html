@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/base.css">
+  <!-- <link rel="stylesheet" href="css/header2.css"> -->
+  <!-- <link rel="stylesheet" href="css/footer2.css"> -->
+  <link rel="stylesheet" href="css/settlement.css">
+</head>
+
+<body>
+  <!-- 顶部黑边 -->
+  <header></header>
+
+  <!-- logo -->
+  <div class="top_logo clearfix">
+    <img src="./img/shopping_trolley/pic-15.jpg" alt="">
+    <img src="./img/shopping_trolley/pic-16.jpg" alt="">
+  </div>
+
+
+  <!-- main -->
+  <div class="wrap">
+    <!-- 填写并核对以下信息 -->
+    <div>
+      <!-- 标题 -->
+      <div class="box-tl">
+        <p>填写并核对以下信息</p>
+      </div>
+      <!-- 收货信息 -->
+      <div class="box-a">
+        <!-- 抬头 -->
+        <p>收货信息：
+          <span class="new_p">＋新增收货地址</span>
+        </p>
+        <!-- 主体 -->
+        <div class="address">
+          <!-- 默认地址 -->
+          <div class="box-ax pink_bg">
+            <p style="width:190px">某某某</p>
+            <p style="width:140px">123****1234</p>
+            <p style="width:500px">**省**市**区**路</p>
+            <!-- 默认地址 按钮 -->
+            <p class="ax-sp">
+              <span>默认地址</span>
+              <span class="red">修改</span>
+              <a href="javascript:;">╳</a>
+            </p>
+          </div>
+          <div id="hidden" style="display: none;"></div>
+          <div class="address_more">
+            <a href="javascript:;">
+              <img src="./img/shopping_trolley/update_down.jpg" class="update_ico">
+              <span class="redhover">更多地址</span>
+            </a>
+          </div>
+          <!-- 更多地址 -->
+          <input type="hidden" id="_a">
+        </div>
+        <!-- 收货人修改弹出窗口 -->
+        <!-- 点击更多地址弹出 -->
+        <!-- class中的内容有服务器设置 -->
+        <!-- 请输入正确的***、***不能为空 -->
+        <div style="display:none;" class="box">
+          <a href="javascript:;">╳</a>
+          <!-- 表单 -->
+          <ul>
+            <!-- 收货人 -->
+            <li>
+              <label>
+                <span>* </span>收货人：</label>
+              <input type="text" id="shouhuoren">
+              <span class="err">收货人不能为空</span>
+            </li>
+            <!-- 手机 -->
+            <li>
+              <label>
+                <span>* </span>手机：</label>
+              <input type="text">
+              <span class="err">手机号码不能为空</span>
+              <label> 固定电话：</label>
+              <input type="text">
+            </li>
+            <!-- 地址 -->
+            <li>
+              <label>
+                <span>* </span>地址：</label>
+              <div style="display: inline-block">
+                <select style=" height:25px;width:120px" id="province">
+                  <option value="">请选择省份</option>
+                  <option value="11">北京市</option>
+                  <option value="12">天津市</option>
+                  <option value="13">河北省</option>
+                  <option value="14">山西省</option>
+                  <option value="15">内蒙古自治区</option>
+                  <option value="21">辽宁省</option>
+                  <option value="22">吉林省</option>
+                  <option value="23">黑龙江省</option>
+                  <option value="31">上海市</option>
+                  <option value="32">江苏省</option>
+                  <option value="33">浙江省</option>
+                  <option value="34">安徽省</option>
+                  <option value="35">福建省</option>
+                  <option value="36">江西省</option>
+                  <option value="37">山东省</option>
+                  <option value="41">河南省</option>
+                  <option value="42">湖北省</option>
+                  <option value="43">湖南省</option>
+                  <option value="44">广东省</option>
+                  <option value="45">广西壮族自治区</option>
+                  <option value="46">海南省</option>
+                  <option value="50">重庆市</option>
+                  <option value="51">四川省</option>
+                  <option value="52">贵州省</option>
+                  <option value="53">云南省</option>
+                  <option value="54">西藏自治区</option>
+                  <option value="61">陕西省</option>
+                  <option value="62">甘肃省</option>
+                  <option value="63">青海省</option>
+                  <option value="64">宁夏回族自治区</option>
+                  <option value="65">新疆维吾尔自治区</option>
+                  <option value="71">台湾省</option>
+                  <option value="81">香港特别行政区</option>
+                  <option value="82">澳门特别行政区</option>
+                </select>
+                <input type="hidden" id="_p" name="resideprovince" value="">
+              </div>
+              <div style="display: inline-block">
+                <select style=" height:25px;width:120px" id="city">
+                  <option value="">城市</option>
+                </select>
+                <input type="hidden" id="_c" name="residecity" value="">
+              </div>
+              <div style="display: inline-block">
+                <select style=" height:25px;width:120px" id="dist">
+                  <option value="">区/县</option>
+                </select>
+                <input type="hidden" id="_d" name="residedist" value="">
+              </div>
+              <span class="err">地址不能为空</span>
+            </li>
+            <!-- 详细地址 -->
+            <li>
+              <label>
+                <span>* </span>详细地址：</label>
+              <input type="text" style="width:410px;">
+              <span class="err">详细地址不能为空</span>
+            </li>
+            <!-- 邮箱 -->
+            <li>
+              <label>邮箱：</label>
+              <input type="text">
+            </li>
+            <!-- 设为默认收货地址 -->
+            <li>
+              <label>
+                <input type="checkbox" id="check" class="ou" />&nbsp;&nbsp;</label>设置为默认收货地址</li>
+            <!-- 保存收货人信息 -->
+            <li>
+              <label></label>
+              <button>保存收货人信息</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 支付方式 -->
+      <div class="box-b">
+        <p>支付方式：</p>
+        <div style="cursor:pointer;" class="box-ax pink_bg" value="0">
+          <p>
+            <span>在线支付</span>
+          </p>
+          <img src="./img/shopping_trolley/pic-07.jpg" id="icon">
+        </div>
+      </div>
+      <!-- 送货方式 -->
+      <div class="box-e">
+        <p>送货方式：</p>
+        <div>
+          <div style="cursor:pointer;" class="box-ax pink_bg" value="1">
+            <p>
+              <span>快递</span>
+            </p>
+            <img src="./img/shopping_trolley/pic-07.jpg" id="icon">
+          </div>
+        </div>
+      </div>
+      <!-- 发票信息 -->
+      <div class="box-c">
+        <p class="c-p">发票信息
+          <span>(发票内容只能开明细,开增值税发票不赠送乐豆)</span>:
+        </p>
+
+        <div style="border:none;" class="box-ax">
+          <p>
+            发票抬头：
+            <span>个人</span>
+            发票类型：
+            <span>电子发票</span>
+            开票方式：
+            <span>电子发票</span>
+            <span style="cursor:pointer;" class="red">修改</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--确认商品  -->
+    <div class="box-02">
+      <div class="box-tl">
+        <!-- 抬头 -->
+        <p>
+          <a href="javascript:;">返回购物车修改&gt;</a>确认商品&nbsp;&nbsp;
+          <span>(定制类产品,手机产品激活后、虚拟产品不支持7天无理由退换货)</span>
+        </p>
+      </div>
+      <!-- 详情表头 -->
+      <div class="box-ls">
+        <p class="tl-a">&nbsp;</p>
+        <p class="tl-b">商品名称</p>
+        <p class="tl-c">单价</p>
+        <p class="tl-d">数量</p>
+        <p class="tl-e">金额</p>
+      </div>
+      <div style="margin-top: 20px;border-bottom: 1px solid #d9d8d6;"></div>
+      <!-- 内容 -->
+
+      <!-- <div class="list"> -->
+        <!-- 图片 -->
+        <!-- <p class="list-a"> -->
+          <!-- <a href="javascript:;"> -->
+            <!-- <img src="./img/product/sm/001_1.jpg"> -->
+          <!-- </a> -->
+        <!-- </p> -->
+        <!-- 名称 -->
+        <!-- <p class="list-b"> -->
+          <!-- <a href="javascript:;">清洁保养套装</a> -->
+        <!-- </p> -->
+        <!-- 单价 -->
+        <!-- <p class="list-c">29.90</p> -->
+        <!-- 数量 -->
+        <!-- <p class="list-d">1</p> -->
+        <!-- 总价 -->
+        <!-- <p class="list-e">29.90</p> -->
+      <!-- </div> -->
+
+    </div>
+    <!-- 优惠信息 -->
+    <div class="box-03">
+      <div class="box-tl">
+        <p>优惠信息
+          <span>&nbsp;&nbsp;&nbsp;温馨提示:您优惠券、优惠码使用过程中,有任何问题请联系客服</span>
+        </p>
+      </div>
+      <!-- --------------使用优惠券 --------------- -->
+      <div class="message">
+        <p class="menuTitle">
+          <a href="javascript:;"></a>
+          <span class="red">使用优惠券(</span>
+          <span class="red">0</span>
+          <span class="red">张可用)</span>
+        </p>
+      </div>
+
+      <!-- --------------使用优惠码 --------------- -->
+      <div class="message">
+        <p class="menuTitle">
+          <a href="javascript:;"></a>
+          <span class="red">使用优惠码</span>
+        </p>
+      </div>
+
+
+      <!-- ---------------使用乐豆---------------- -->
+      <div class="message">
+        <p class="menuTitle">
+          <a href="javascript:;" class=""></a>
+          <span class="red">使用乐豆</span>(总乐豆数量
+          <label class="red">0</label>个)</p>
+      </div>
+    </div>
+    <!-- 订单备注 -->
+    <div class="box-04">
+      <div class="box-tl">
+        <p>订单备注</p>
+      </div>
+      <!-- 客服经理编码 -->
+      <div class="dan">
+        <p>客服经理编码：
+          <input type="text" placeholder="如果您联系过客服,可以填写其编码">
+        </p>
+      </div>
+      <!-- 订单备注 -->
+      <div class="dans">
+        <p>订单备注:</p>
+        <textarea placeholder="告诉我您的特殊要求,限45字"></textarea>
+      </div>
+    </div>
+    <!-- 同意书 -->
+    <div class="box-05" style="text-align:right;">
+      <span>
+        <input type="checkbox">
+        <a href="javascript:;" class="redhover">我同意 《联想产品网络销售通用条款和条件》</a>
+      </span>
+
+    </div>
+    <!-- 价格 -->
+    <div class="box-06 clearfix">
+      <p style="display:block">
+        <span>商品总价：
+          <em>￥29.90</em>元</span>
+      </p>
+      <span style="display: none;">
+        <p style="display: none;" >
+          <span>折扣抵减：
+            <em>￥0.00</em>元</span>
+        </p>
+        <p style="display: none;">
+          <span>优惠券抵减：
+            <em>￥0.00</em> 元</span>
+        </p>
+      </span>
+      <p style="display: none;">
+        <span>运费：
+          <em>￥0.00</em>元</span>
+      </p>
+      <p style="display: none;">
+        <span>应付总额：
+          <em>￥19.90</em>元</span>
+      </p>
+      <p style="margin-bottom: 30px;">
+        <button>提交订单</button>
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- 页脚 -->
+  <footer></footer>
+
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/header2.js"></script>
+  <script src="js/footer2.js"></script>
+  <script src="js/settlement.js"></script>
+</body>
+
+</html>

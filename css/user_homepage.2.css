@@ -1,0 +1,161 @@
+body {
+    min-width: 1320px !important;
+}
+/*黑线下区域设置*/
+.user_pace{
+    margin: 0 auto;
+    position: relative;
+    min-height:600px;
+    width: 1200px;
+}
+/*用户页面导览栏*/
+.user_location{
+    width: 1188px;
+    margin: 0 auto;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    background: #eee;
+    padding-left: 12px;
+}
+.user_location a {
+    color: #000;
+    margin: 0 5px;
+}
+.user_location a:hover{
+    color:#e2231a;
+}
+/*导览栏下主页面*/
+.user_main_page{
+    width: 1200px;
+    margin: 28px auto 35px;
+}
+/*左侧目录*/
+.user_page_lf{
+    width: 150px;
+    border: 1px solid #d9d8d6;
+    float: left;
+}
+
+#user_leftbox {
+    width: 150px;
+    font-family: arial,"微软雅黑",sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+#user_leftbox h3 {
+    border-top: 1px solid #d9d8d6;
+    height: 32px;
+    line-height: 32px;
+    background: #eee;
+    padding-left: 32px;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+}
+#user_leftbox h3 span {
+    float: left;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+}
+#user_leftbox h3 i {
+    float: left;
+    display: block;
+    width: 9px;
+    height: 6px;
+    background: url(../img/user/usericon.png) -16px -3px;
+    margin: 13px 0 0 10px;
+}
+#user_leftbox li {
+    height: 31px;
+    line-height: 31px;
+    padding-left: 32px;
+    font-size: 13px;
+    border-top: 1px solid #d9d8d6;
+}
+#user_leftbox li a {
+    color: #6f7170;
+}
+
+
+/* 右侧主页 */
+.paswd_right {
+    float: right;
+    width: 1032px;
+}
+/* 位置 */
+.paswd_box {
+    border: 1px solid #d9d8d6;
+    margin-bottom: 25px;
+}
+/* 标题 */
+.paswd_title {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #d9d8d6;
+    background: #eee;
+}
+/* 文字 */
+.paswd_title p {
+    font-size: 15px;
+    padding-left: 22px;
+}
+/* 内容 */
+.paswd_box ul {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 330px;
+}
+/* 子项 */
+.paswd_box ul li {
+    line-height: 24px;
+    height: 24px;
+    padding-left: 22px;
+    margin-top: 10px;
+}
+/* 项目 */
+.paswd_box ul li p {
+    float: left;
+}
+.paswd_name {
+    width: 80px;
+    font-size: 13px;
+    color: #000;
+    text-align: right;
+}
+.paswd_input_w {
+    width: 153px;
+    height: 22px;
+    border: 1px solid #d2d2d2;
+    margin-right: 34px;
+}
+/* 反馈信息 警告 */
+.warn {
+    height: 23px;
+    position: absolute;
+    z-index: 10000;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 4px;
+    color: #e2231a;
+    display: none;
+    background-color: #ffedc4;
+}
+/* 按钮 */
+.paswd_btn {
+    width: 117px;
+    height: 30px;
+    background: #c9c9c9;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.paswd_btn:hover{
+    background: #e2231a;
+    color: #fff;
+}
+

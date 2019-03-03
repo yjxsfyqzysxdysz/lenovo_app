@@ -1,0 +1,64 @@
+/* 顶部黑边 */
+.top_box{
+  height: 38px;
+  min-width: 1200px;
+  background: #000;
+}
+/* 位置设置 */
+.top_cont{
+  width: 1200px;
+  height: 38px;
+  line-height: 38px;
+  margin: 0 auto;
+}
+/* 表单 */
+.top_cont_list{
+  
+}
+.top_cont_list>li{
+  float: right;
+  position: relative;
+}
+.top_cont_list>li:first-child a{
+  border: none;
+}
+.top_cont_list>li a{
+  color: #fff;
+  border-right: 1px solid #fff;
+  padding:0 12px;
+  font-size: 13px;
+  text-align: center;
+}
+/* 用户表单 */
+.top_cont_userlist{
+  background:#fff;
+  width: 104px;
+  border: 1px solid #d3d3d3;
+  position: absolute;
+  right: 0;
+  top: 38px;
+  padding-bottom: 10px;
+  /* display: none; */
+  /* visibility: hidden; */
+  opacity: 0;
+  height:0;
+  overflow: hidden;
+  transition: all .2s linear;
+}
+.top_cont_userlist li{
+  height: 28px;
+  text-align: center;
+}
+ul.top_cont_userlist a{
+  color: #000;
+}
+/* 动态效果 */
+.top_cont_list_user:hover ul{
+  /* display: block; */
+  height: 58px;
+  /* visibility: visible; */
+  opacity: 1;
+}
+.top_cont_list_user:hover>a{
+  color: #f00;
+}

@@ -1,0 +1,282 @@
+.shop_footer{
+    min-width:1320px;
+}
+#Services-list{
+    background:#f5f5f5;
+    height:83px;
+}
+.ns_w{
+    width:1200px;
+    margin:0 auto;
+    height:83px;
+}
+#lazy_img{
+    text-align:center;
+    vertical-align:top;
+    width:1200px;
+    height:83px;
+}
+.shop_footer_mid{
+    width:100%;
+    background:#fff;
+    padding-bottom:10px;
+}
+#footer{
+    color:#000;
+    width:1200px;
+    margin:0 auto;
+    /*border:2px solid #000;*/
+}
+.ns_p2{
+    padding-top:10px;
+    height:130px;
+}
+.ns_w{
+    padding-bottom:30px;
+}
+.ns_w dl{
+    float:left;
+    height:140px;
+    position:relative;
+    padding-right:152px;
+}
+.ns_p2 	dt{
+    line-height:30px;
+}
+dt a{
+    color:#000;
+    font-size:14px;
+}
+dd a{
+    display:block;
+    line-height:22px;
+    color:#555;
+    font-size:12px;
+}
+.footer{
+    background:#272727;
+    height:400px;
+    width:100%;
+    color:#ccc;
+}
+.footer *{
+    box-sizing:content-box;
+}
+.fl{
+    float:left;
+}
+li{
+    list-style:none;
+}
+.foot_top{
+    width:1100px;
+    margin:auto;
+    padding:44px 0 27px 100px;
+}
+.about_lenovo{
+    width:210px;
+}
+.foot_top li>a{
+    display:block;
+    color:#ccc;
+    font-size:13px;
+    line-height:13px;
+    margin-bottom:12px;
+    text-decoration: none;
+}
+.foot_top_title{
+    font-size:16px !important;
+    line-height:16px !important;
+    margin-bottom:18px !important;
+    font-weight:600 !important;
+}
+.shop_lenovo{
+    width:210px;
+}
+.service_lenovo{
+    width:210px;
+}
+.lenovo_website_group{
+    width:240px;
+}
+.foot_top li>h6{
+    font-size:16px;
+    line-height:16px;
+    margin-bottom:18px;
+    color:#ccc;
+}
+/*联想官方社交平台 设置*/
+/*联想官方社交平台区域设置*/
+.social_platform{
+    width:230px;
+}
+/*联想官方社交平台 小图标区域设置*/
+/*小图标位置设置*/
+.social_plat{
+    margin:2px 0 10px;
+}
+.social_plat li{
+    margin:6px 7px 6px 4px;
+}
+/*图标设置*/
+/*微信图标*/
+.darkwchat,.lightwchat,.darkqqzone,.lightqqzone,.darkweibo,.lightweibo,.dark_fun_icon,.light_fun_icon{
+    width:37px;
+    height:36px;
+}
+.dark_weibo_icon,.light_weibo_icon{
+    width:82px;
+    height:20px;
+}
+.dark_tieba,.light_tieba{
+    width:74px;
+    height:22px;
+}
+.darkwchat{
+    background:url(../img/footer/platform_icons_sprits.png) -8px -190px;
+}
+.lightwchat{
+    display:none;
+    background:url(../img/footer/platform_icons_sprits.png) -8px -238px;
+}
+/*QQ空间*/
+.darkqqzone{
+    background:url(../img/footer/platform_icons_sprits.png) -63px -190px;
+}
+.lightqqzone{
+    display:none;
+    background:url(../img/footer/platform_icons_sprits.png) -63px -238px;
+}
+/*微博*/
+.darkweibo{
+    background:url(../img/footer/platform_icons_sprits.png) -119px -190px;
+}
+.lightweibo{
+    display:none;
+    background:url(../img/footer/platform_icons_sprits.png) -119px -238px;
+}
+/*兴趣部落*/
+.dark_fun_icon{
+    background:url(../img/footer/platform_icons_sprits.png) -176px -190px;
+}
+.light_fun_icon{
+    display:none;
+    background:url(../img/footer/platform_icons_sprits.png) -176px -238px;
+}
+/*微博图标位置设置*/
+.weibo_icon{
+    margin-right:20px;
+}
+/*微博图标设置*/
+.dark_weibo_icon{
+    background:url(../img/footer/platform_icons_sprits.png) -8px -132px;
+}
+.light_weibo_icon{
+    display:none;
+    background:url(../img/footer/platform_icons_sprits.png) -8px -158px;
+}
+/*贴吧图标位置设置*/
+.tieba{
+    margin-top:-2px;
+}
+/*贴吧图标设置*/
+.dark_tieba{
+    background:url(../img/footer/platform_icons_sprits.png) -119px -129px;
+}
+.light_tieba{
+    display:none;
+    background:url(../img/footer/platform_icons_sprits.png) -119px -155px;
+}
+/*鼠标悬浮事件*/
+.wchat:hover .darkwchat,.qqzone:hover .darkqqzone,.weibo:hover .darkweibo,.fun_icon:hover .dark_fun_icon,.weibo_icon:hover .dark_weibo_icon,.tieba:hover .dark_tieba{
+    display:none;
+}
+.wchat:hover .lightwchat,.qqzone:hover .lightqqzone,.weibo:hover .lightweibo,.fun_icon:hover .light_fun_icon,.weibo_icon:hover .light_weibo_icon,.tieba:hover .light_tieba{
+    display:block;
+}
+/*联想官方社交平台 下小图标鼠标移至旋转*/
+li>a:hover{
+    transform:rotate(360deg);
+}
+.social_plat li a {
+    transition: all 0.3s;
+    margin-bottom: 0 !important;
+}
+/*联想官方社交平台 end*/
+.select_country{
+    margin:60px 0 10px;
+    font-size:16px;
+    line-height:16px;
+    color: #ccc;
+}
+.countries_version{
+    position:relative;
+}
+.all_countries{
+    position:absolute;
+    width:185px;
+    height:210px;
+    background:#fff;
+    border:1px solid #858585;
+    bottom:24px;
+    left:0;
+    overflow:auto;
+    z-index:55;
+    display:none;
+}
+.all_countries ul li{
+    text-align:left;
+    margin:4px;
+}
+.footer .all_countries ul li a{
+    color:#000;
+}
+.countries_version:hover #all_countries{
+    display:block;
+}
+#all_countries a:hover{
+    color:#f00;
+}
+#cn_img{
+    width:186px;
+    height:24px;
+    background:url(../img/footer/china.jpg);
+}
+.clearfix::after{
+    display:block;
+    clear:both;
+    height:0;
+    visibility:hidden;
+    font-size:0;
+    line-height:0;
+    content:"";
+}
+.foot_bot{
+    border-top:1px solid #424141;
+    background:#272727;
+}
+.foot_bot_con{
+    width:1200px;
+    margin:auto;
+    font-size:12px;
+    line-height:46px;
+}
+.foot_bot_left span,.foot_bot_right span{
+    display:inline-block !important;
+    margin:0 6px;
+}
+.foot_bot_con a{
+    font-size:12px;
+    line-height:46px;
+}
+.fr{
+    float:right;
+}
+.foot_bot_left a,.foot_bot_right a{
+    color:#fff;
+}
+.ns_fixClear>dl>dd a:hover{
+    color:#555;
+    font-weight: bold;
+    text-decoration: none;
+}

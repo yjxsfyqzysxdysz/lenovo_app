@@ -1,0 +1,235 @@
+/* 注册区域设置 */
+.regist {
+  width: 358px;
+  margin: 60px auto;
+  background-color: #fff;
+}
+/* 标题 */
+.regist_title {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+/* 注册用户选择 */
+.regist_tap {
+  margin-top: 38px;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+/* 文字样式 */
+.regist_tap h3 {
+  width: 178px;
+  float: left;
+  color: #424242;
+  text-align: center;
+  line-height: 22px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* 中间分割线 */
+.regist_tap .person_regist {
+  border-right: 1px solid #e4e4e4;
+}
+/* 选中样式 */
+.regist_tap .now {
+  color: #e43e38;
+}
+/* 注册区域变换区域 外层div基础设置 */
+.regist_info_person {
+  display: block;
+  position: relative;
+}
+#slider_company, #slider_person {
+  margin-bottom: 14px;
+}
+.regist_main .regist_item {
+  position: relative;
+}
+/* 输入框通用样式 */
+.regist_main input {
+  width: 291px;
+  border: 1px solid #d6d6d6;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 15px;
+  font-size: 14px;
+  color: #8c8c8c;
+  margin-bottom: 14px;
+  padding-right: 50px;
+}
+/* 输入窗 清空图标 */
+/* 当用户输入时，if input value!="",className += " icon-clear" */
+.regist_item .icon-clear {
+  position: absolute;
+  right: 14px;
+  top: 17px;
+  width: 16px;
+  height: 16px;
+  /* display: block; */
+  background: url(../img/login/icon-delete.png) no-repeat 50%;
+  cursor: pointer;
+  display: none;
+}
+/* 输入窗 错误提示图标 */
+/* 用户输入后  进行筛选  当有问题时， .icon-err-delete代替.icon-clear*/
+.regist_main .icon-err-delete{
+  background: url(../img/login/icon-err2.png) no-repeat 50%;
+  /* display: none; */
+}
+/* 滑块 */
+/* 位置 */
+.regist .slider {
+  margin-bottom: 14px;
+}
+/* 基本样式 */
+.ui-slider-wrap {
+  width: 358px;
+  height: 50px;
+  position: relative;
+  background-image: url(../img/login/slider_bg.png);
+}
+/* 滑块目标图标*/
+.ui-slider-wrap .add-img {
+  line-height: 50px;
+  font-size: 14px;
+  color: #424242;
+  background: url(../img/login/favourites.png) no-repeat;
+  background-position-x: 70%;
+  background-position-y: center;
+}
+/* 文字 */
+.ui-slider-wrap .ui-slider-text {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #666;
+  user-select: none;
+}
+/* 滑块 */
+.ui-slider-wrap .ui-slider-btn {
+  width: 50px;
+  height: 50px;
+  background: #fff url(../img/login/slider_bt.png) no-repeat center;
+  position: absolute;
+  cursor: move;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* 摁住滑块拖动后 背景效果 */
+/* 加js，width=滑块的left */
+.ui-slider-wrap .ui-slider-bg {
+  width: 0;
+  height: 50px; 
+  background-color: #33cc00;
+}
+/* 验证成功时，滑块改变属性 */
+.ui-slider-wrap .ui-slider-btn.success {
+  background-image: url(../img/login/success.png);
+}
+
+
+/* 短信验证 */
+.regist_input {
+  width: 100%;
+  position: relative;
+}
+/* 左侧输入窗口 */
+.regist .captcha {
+  float: left;
+  width: 180px;
+  padding-left: 15px;
+}
+/* 右侧按钮 */
+.regist .captcha_btn {
+  float: left;
+  width: 110px;
+  height: 48px;
+  background: #f7f7f7;
+  color: #3680c1;
+  border: 1px solid #d6d6d6;
+  text-align: center;
+  line-height: 48px;
+  border-left: 0;
+  font-size: 14px;
+}
+/* 错误提示 */
+.regist-error {
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #ef1c22;
+  display: none;
+}
+/* 警告图标 */
+.regist-error i {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-top: 4px;
+  background: url(../img/login/err.png) no-repeat 50%;
+  background-size: cover;
+}
+/* 警告信息内容 */
+.regist-error p {
+  float: left;
+  margin-left: 8px;
+}
+/* 注册按钮 */
+.regist_button {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  width: 358px;
+  background-color: #e22319;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.regist_button:hover {
+  background-color: #ef3229;
+  color:#fff;
+}
+/* 说明 */
+.regist_agreement {
+  margin-top: 10px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #757575;
+}
+/* 文字 样式 */
+.regist_agreement a {
+  color: #424242;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+/* 右下角 已有账号 */
+.regist_agreement .go_login {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

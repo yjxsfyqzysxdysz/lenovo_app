@@ -1,0 +1,367 @@
+/*网页头部黑线*/
+.title{
+    display:flex;
+    height:38px;
+    /*border:1px solid #000;*/
+    background: #000;
+}
+.bgc{
+    min-width: 1200px;
+    height:38px;
+    margin:0 auto;
+    /*background: #f00;*/
+}
+.bgc::after{/*高度坍塌*/
+    content:"";
+    display:block;
+    clear:both;
+}
+.logo{
+    float:left;
+    position:relative;
+}
+.logo_icon{
+    position:absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    background:url(../img/smart_section/logol.jpg) no-repeat;
+    height:155px;
+    width:52px;
+}
+/*logol里的链接*/
+.logol a{
+    display:inline-block;
+    cursor:pointer;
+    color:#e8200600;
+    text-decoration:none;
+    width:52px;
+    height:155px;
+    /*没能让a标签里的内容藏在在logo下面orz*/
+}
+/*右上角 联想商城首页/登录/购物车 区域设置*/
+.list{
+    float: right;
+    width:1200px;
+    height:38px;
+    background: #000;
+}
+.list::after{/*高度坍塌*/
+    content:"";
+    display:block;
+    clear:both;
+}
+/*右上角 联想商城首页/登录/购物车 列表 设置*/
+.list_item{
+    list-style-type:none;
+    margin:11px 0;
+    display:flex;
+    cursor:pointer;
+    float:right;
+    position: relative;
+}
+/*右上角 各列设置*/
+.list_item li{
+    height:14px;
+    line-height:14px;/*文字上下居中*/
+    font-family:微软雅黑;
+    text-decoration:none;
+    padding:0 10px;
+}
+.list_item>li:nth-child(2){
+    border-right:1px solid #fff;
+    border-left:1px solid #fff;
+    /*margin-top:1px;*/
+}
+/*右上角 联想商城首页 字体*/
+.list_item>li  a{
+    color:#fff;
+}
+/*右上角 登录/购物车 字体*/
+.list_item>li:not(:nth-child(1)) a{
+    color:#c6c5c3;
+    font-size: 13px;
+}
+/*右上角 购物车数字 字体*/
+.num{
+    color:#fff;
+    font-size:11px;
+    background:url(../img/smart_section/000.png)-185px -201px no-repeat;
+    display:inline-block;
+    width:22px;
+    height:22px;
+    line-height:18px;
+    text-align:center;
+    position:absolute;
+    top:-10px;
+    right:0;
+}
+/*主要部分底图设置*/
+/*主体区域框架*/
+.content{
+    background-color:#fff;
+    display: flex;
+    margin:0 auto;
+    /*两端对齐排列*/
+    justify-content:space-between;
+    /*允许换行*/
+    flex-wrap:wrap;
+    overflow: hidden;
+}
+.content>div{
+    background-position-x:center;
+    background-position-y:top;
+    background-repeat:no-repeat;
+    width:100%;
+    position: relative;
+}
+.content>div>a{
+    display:block;
+}
+.content>div>div{
+    position:relative;
+}
+.p11>a,.p12>a,.p13>a,.p14>a,.p15>a,.p16>a{
+    width:1238px;
+    height:570px;
+    display:block;
+    margin:0 auto;
+}
+.p3>a,.p7>div,.p8>div,.p9>div,.p17>div,.p18>div{
+    display:flex;
+    margin:0 auto;
+    position:relative;
+    justify-content:space-between;
+}
+/*主体部分 P7,P8,P9,P17,P18点击区域的高*/
+.P7,.P8,.P9,.P17,.P18{
+    height:100%;
+}
+.p3>div>a,.p4>div>a,.p5>div>a,.p6>div>a{
+    position:absolute;
+}
+.p7>div>a,.p8>div>a{
+    width:298px;
+}
+.p3>a{
+    width:350px;
+    height:55px;
+    margin-top:21px;
+}
+.p3>div{
+    width:1233px;
+    height:501px;
+    margin: 370px auto;
+}
+.p3>div>a:first-child{
+    width:531px;
+    height:280px;
+}
+.p3>div>a:last-child{
+    width:426px;
+    height:333px;
+    bottom:0;
+    right:0;
+}
+.p4>div{
+    width:1083px;
+    height:855px;
+    margin:0 auto;
+}
+.p4>div>a:first-child{
+    width:382px;
+    height:244px;
+    left: 100px;
+    top: -79px;
+}
+.p4>div>a:nth-child(2){
+    width:294px;
+    height:368px;
+    bottom: 206px;
+    left: -29px;
+}
+.p4>div>a:nth-child(3){
+    width:251px;
+    height:372px;
+    right: 220px;
+    top: 10px;
+}
+.p4>div>a:last-child{
+    width:531px;
+    height:254px;
+    bottom: 79px;
+    right: 29px;
+}
+.p5>div{
+    width:1190px;
+    height:705px;
+    margin:16px auto;
+}
+.p5>div>a:first-child{
+    width:532px;
+    height:282px;
+    top:0;
+    left:-36px;
+}
+.p5>div>a:nth-child(2){
+    width:326px;
+    height:280px;
+    bottom:0;
+    left:205px;
+}
+.p5>div>a:nth-child(3){
+    width:428px;
+    height:285px;
+    right:32px;
+    top:146px;
+}
+.p5>div>a:last-child{
+    width:299px;
+    height:372px;
+    bottom: -206px;
+    right: 225px;
+}
+.p6>div{
+    width:1049px;
+    height:402px;
+    margin:0 auto;
+}
+.p6>div>a:first-child{
+    width:294px;
+    height:384px;
+    top: -113px;
+    left: -13px;
+}
+.p6>div>a:last-child{
+    width:532px;
+    height:271px;
+    bottom: 0;
+    right: 11px;
+}
+.p7>div{
+    width:1246px;
+    height:489px;
+    margin-top:121px;
+}
+.p8>div{
+    width:1246px;
+    height:489px;
+    margin-top:100px;
+}
+.p9>div{
+    width:1248px;
+    height:488px;
+    margin-top:97px;
+}
+.p9>div>a{
+    width:302px;
+}
+.p11>a{
+    margin-top:64px;
+}
+.p12>a{
+    margin-top:32px;
+}
+.p13>a{
+    margin-top:22px;
+}
+.p14>a{
+    margin-top:28px;
+}
+.p15>a{
+    margin-top:28px;
+}
+.p16>a{
+    margin-top:26px;
+}
+.p17>div{
+    width:1174px;
+    height:414px;
+    margin-top:133px;
+}
+.p17>div>a{
+    width:274px;
+}
+.p18>div{
+    width:1151px;
+    height:315px;
+    margin-top:56px;
+}
+.p18>div>a{
+    width:278px;
+}
+.p1{
+    height:889px;
+    background:url(../img/smart_section/p1.jpg);
+}
+.p2{
+    height:937px;
+    background:url(../img/smart_section/p2.jpg);
+}
+.p3{
+    height:997px;
+    background:url(../img/smart_section/p3.jpg);
+}
+.p4{
+    height:831px;
+    background:url(../img/smart_section/p4.jpg);
+}
+.p5{
+    height:964px;
+    background:url(../img/smart_section/p5.jpg);
+}
+.p6{
+    height:824px;
+    background:url(../img/smart_section/p6.jpg);
+}
+.p7{
+    height:642px;
+    background:url(../img/smart_section/p7.jpg);
+}
+.p8{
+    height:627px;
+    background:url(../img/smart_section/p8.jpg);
+}
+.p9{
+    height:659px;
+    background:url(../img/smart_section/p9.jpg);
+}
+.p10{
+    height:243px;
+    background:url(../img/smart_section/p10.jpg);
+}
+.p11{
+    height:670px;
+    background:url(../img/smart_section/p11.jpg);
+}
+.p12{
+    height:631px;
+    background:url(../img/smart_section/p12.jpg);
+}
+.p13{
+    height:631px;
+    background:url(../img/smart_section/p13.jpg);
+}
+.p14{
+    height:630px;
+    background:url(../img/smart_section/p14.jpg);
+}
+.p15{
+    height:639px;
+    background:url(../img/smart_section/p15.jpg);
+}
+.p16{
+    height:648px;
+    background:url(../img/smart_section/p16.jpg);
+}
+.p17{
+    height:659px;
+    background:url(../img/smart_section/p17.jpg);
+}
+.p18{
+    height:425px;
+    background:url(../img/smart_section/p18.jpg);
+}
+div{
+    /*border: 1px solid #f00;*/
+}

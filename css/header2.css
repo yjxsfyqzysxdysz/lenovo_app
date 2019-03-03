@@ -1,0 +1,111 @@
+  /*页首新增区域样式*/
+
+  body {
+    min-width: 1320px !important;
+  }
+
+  .quanbufenlei {
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 32;
+    float: left;
+  }
+
+  .allcatetitle {
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #fff;
+    text-align: left;
+  }
+
+  .nav_box {
+    width: 670px;
+  }
+
+  /*下拉菜单*/
+
+  #tab {
+    margin-top: 14px;
+    position: absolute;
+    top: 36px;
+    left: -11px;
+    display: none;
+  }
+
+  /*列表*/
+
+  .list_name {
+    line-height: 50px;
+    height: 50px;
+    text-align: left;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    width: 190px;
+    /*top:0px;*/
+  }
+
+  .list_nm {
+    font-size: 15px;
+    border: 0;
+  }
+
+  .list_icon {
+    right: 15px;
+    top: 14px;
+    width: 6px;
+    height: 9px;
+    position: absolute;
+    display: inline-block;
+    background: url(../img/cover/icon.png) -84px -36px no-repeat;
+  }
+
+  /*主轮播图二级标签位置设置*/
+
+  #content1 {
+    top: 0;
+  }
+
+  #content2 {
+    top: -51px;
+  }
+
+  #content3 {
+    top: -102px;
+  }
+
+  #content4 {
+    top: -153px;
+  }
+
+  #content5 {
+    top: -204px;
+  }
+
+  #content6 {
+    top: -255px;
+  }
+
+  #content7 {
+    top: -306px;
+  }
+
+  #content8 {
+    top: -357px;
+  }
+
+  .quanbufenlei:hover #tab {
+    display: block;
+  }
+  .list_cont{
+    left:191px;
+    border-top: 0;
+  }

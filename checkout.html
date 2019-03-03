@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <!-- <link rel="stylesheet" href="css/header2.css"> -->
+  <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header></header>
+
+  <!-- main -->
+  <div class="content_wrapper">
+    <!-- 一层 -->
+    <div class="info clearfix">
+      <div class="con">
+        <!-- 左侧图标 -->
+        <div class="left">
+          <em class="icon"></em>
+          <b class="countdown">60 S</b>
+          <b class="actual"></b>
+        </div>
+        <!-- 右侧文字 -->
+        <div class="right">
+          <!-- 表层信息 -->
+          <div class="detail">
+            <p>订单提交完成，请您尽快付款！</p>
+            <p id="dead_time_p">请您在
+              <span class="dead_time" id="dead_time"></span>前完成支付</p>
+            <!-- 右侧的左侧 -->
+            <ul>
+              <li class="syt_huanh">
+                <label>
+                  订单号：
+                  <span></span>
+                </label>
+              </li>
+            </ul>
+            <!-- 右侧的右侧 -->
+            <div class="money">
+              <p>应付金额：
+                <span class="total">￥  元</span>
+              </p>
+              <!-- 点击 -->
+              <a class="show_more redhover" href="javascript:;">
+                <span style="float:right;">订单详情</span>
+                <!-- 按钮 -->
+                <!-- 设定点击效果 变换class down->up -->
+                <!-- 隐藏部分 style display:none->display:block -->
+                <em id="em_order_detail" class="down"></em>
+              </a>
+            </div>
+          </div>
+          <!-- 隐藏部分，订单详细信息 -->
+          <div class="more clearfix" style="display:none;">
+            <ul class="address" id="address">
+              <li>收货信息：
+                <span></span>
+              </li>
+              <li>订单说明：此物品是联想正品
+                <span>由联想 ( 上海 ) 电子科技有限公司-直营服务发货</span>
+              </li>
+              <li>发票信息：
+                <span>个人</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 二层 -->
+    <div class="payment">
+      <div class="title">个人网银支付</div>
+      <!-- 主体 -->
+      <div class="pay_types" id="pay_types">
+        <!-- 支付平台 -->
+        <div class="pay_type">
+          <div class="pay_type_title">支付平台</div>
+          <!-- 列表 -->
+          <ul class="pay_plats clearfix">
+            <!-- 支付宝 -->
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_zfb.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <!-- 微信 -->
+            <li class="weixinpay">
+              <a>
+                <img src="./img/shopping_trolley/payOnline_weixin.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <!-- 银联 -->
+            <li>
+              <a>
+                <img src="./img/shopping_trolley/payOnline_yinlian.png" alt="">
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- 银行借记卡与信用卡 -->
+        <div class="pay_type">
+          <div class="pay_type_title">银行借记卡与信用卡
+            <a href="javascript:;" class="redhover">[查看支付限额]</a>
+          </div>
+          <ul class="pay_plats clearfix">
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_gsyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_zsyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_jsyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_zgyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_nyyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_gfyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_xyyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_youzheng.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_jtyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_pufa.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_zxyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_fcyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_bjnsyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_gdyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_hzyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_nbyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_shnsyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li style="display: none;">
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/payOnline_shyh.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li class="more_bank">
+              查看更多
+            </li>
+          </ul>
+        </div>
+        <!-- 分期付款 -->
+        <div class="pay_type4">
+          <div class="fenqi clearfix">
+            <!-- 标题 -->
+            <h1>分期付款
+              <span>
+                <a href="javascript:;" class="redhover">
+                  <img src="./img/shopping_trolley/icon-1.jpg">&nbsp;分期付款细则</a>
+              </span>
+            </h1>
+            <!-- 主体 -->
+            <div class="xinyka">
+              <!-- 选择分期方式 -->
+              <div class="xuanz">
+                <p>1.选择分期方式</p>
+                <!-- 点击后,sibling的class display由none->block -->
+                <div class="clearfix">
+                  <!-- 花呗 -->
+                  <div class="banks">
+                    <img src="./img/shopping_trolley/pic-01_03.png">
+                    <span></span>
+                  </div>
+                  <!-- 农行 -->
+                  <div class="banks">
+                    <img src="./img/shopping_trolley/nongye.jpg">
+                    <span></span>
+                  </div>
+                  <!-- 招行 -->
+                  <div class="banks">
+                    <img src="./img/shopping_trolley/cmbxyk.png">
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div id="huabei">
+                <!-- 选择分期期数 -->
+                <div class="banks-tab">
+                  <div>
+                    <p>2. 选择分期期数</p>
+                    <div class="date clearfix">
+                      <div>3期
+                        <img src="./img/shopping_trolley/icon-3.jpg">
+                        <span></span>
+                      </div>
+                      <div>6期
+                        <img src="./img/shopping_trolley/icon-3.jpg">
+                        <span></span>
+                      </div>
+                      <div>12期
+                        <img src="./img/shopping_trolley/icon-3.jpg">
+                        <span></span>
+                      </div>
+                    </div>
+                    <p>3. 订单提交支付后无法改期数，如需改请重新下单。</p>
+                  </div>
+                </div>
+                <!-- 按钮 -->
+                <div class="fenqi-btn">
+                  <a href="javascript:;">现在支付</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 三层 -->
+    <div class="payment" style="padding-bottom: 20px;">
+      <!-- 标题 -->
+      <div class="title">企业网银支付&nbsp;(
+        <span>建议使用IE8及以上浏览器</span>)
+      </div>
+      <!-- 主体 -->
+      <div class="pay_types">
+        <div id="pay_type4_div" style="padding-top: 20px">
+          <ul class="pay_plats clearfix">
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/b2b_icbc.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/b2b_abc.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/b2b_ccb.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/b2b_pufa.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/b2b_boc.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/b2b_cmb.png" alt="">
+                <span></span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <img src="./img/shopping_trolley/b2b_unionpay.png" alt="">
+                <span></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 点击支付后的效果 -->
+  <div class="mask"></div>
+  <div class="popbox">
+    <div class="title">正在支付...
+      <a href="javascript:;" class="ljclose">X</a>
+    </div>
+    <!--  -->
+    <!-- 进度条 -->
+    <progress id="progress" value="0" ></progress>
+    <!--  -->
+    <div class="ljpay">
+      <div class="fenqi-btn">
+        <a href="javascript:;">现在支付</a>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer></footer>
+  <!-- <script src="js/header3.js"></script> -->
+  <script src="js/header2.js"></script>
+  <script src="js/footer3.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+
+</html>

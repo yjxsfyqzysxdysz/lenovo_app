@@ -1,0 +1,204 @@
+/* main */
+.buycart {
+  color: #000;
+  background: #fff;
+  margin-top: 40px;
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 第一列 选择框 */
+.buycart .bc_option {
+  position: relative;
+}
+/* 选项全选 checked */
+.bc_option .bc_all {
+  float: left;
+  position: absolute;
+  left: 22px;
+  top: 11px;
+}
+/* checked样式 */
+.bc_option .bc_all a, .bc_table tr .bc_table_sel a, .bc_num .bc_all a {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(../img/shopping_trolley/buycart.png) -167px -4px;
+}
+.bc_option .bc_all a, .bc_num .bc_all a {
+  float: left;
+  margin: 1px 5px 0 0;
+}
+/* 点中效果 */
+.bc_option .active a, #main_table .active a, .bc_num .active a {
+  background-position: -148px -4px;
+}
+/* 列表主体 */
+.buycart .bc_table table {
+  width: 100%;
+  border: 1px solid #d9d8d6;
+  border-bottom: 0;
+  margin-bottom: 10px;
+}
+/* 列表内容 */
+.bc_table tr th, .bc_table tr td {
+  text-align: center;
+  border-bottom: 1px solid #d9d8d6;
+}
+/* 表头item */
+.bc_table tr th {
+  height: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  font-size: 15px;
+  background: #f8f8f8;
+}
+/* 内容item */
+.bc_table tr td {
+  font-size: 14px;
+  padding: 0;
+  position: relative;
+}
+/* 商品_名称 */
+.bc_table tr .bc_proname {
+  text-align: left;
+}
+/* 金额 字体样式 */
+.bc_table tr .bc_red {
+  color: #e2231a;
+}
+/* 商品_图片 */
+.bc_table tr .bc_table_img img {
+  width: 115px;
+}
+/* 数量按钮 区域 */
+.bc_table tr .i_box {
+  display: block;
+  width: 94px;
+  margin: 0 auto;
+}
+/* 数量_按钮 */
+.bc_table tr .i_box input[type = "button"] {
+  width: 20px;
+  height: 20px;
+  background: #eee;
+  float: left;
+  border: 1px solid #d2d2d2;
+  cursor: pointer;
+}
+/* 数量_输入窗口 */
+.bc_table tr .i_box input[type = "text"] {
+  width: 30px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  float: left;
+  border: 0;
+  border-top: 1px solid #d9d8d6;
+  border-bottom: 1px solid #d9d8d6;
+  font-size: 14px;
+}
+/* 统计区域 */
+.buycart .bc_num {
+  border: 1px solid #d9d8d6;
+  background: #f8f8f8;
+  margin-top: 15px;
+  padding: 14px 15px;
+}
+/* 左侧checked */
+.bc_num .bc_num_fl {
+  float: left;
+  font-size: 13px;
+}
+/* 全选按钮 */
+.bc_num .bc_num_fl .bc_all {
+  float: left;
+}
+/* 删除按钮 */
+.bc_num .bc_num_del {
+  float: left;
+  margin-left: 28px;
+  color: #000;
+}
+/* 右侧 价格总计 */
+.bc_num .bc_num_fr {
+  float: right;
+  text-align: right;
+  font-size: 16px;
+}
+/* 右侧 价格总计item */
+.bc_num .bc_num_fr li {
+  margin-top: 13px;
+}
+/* 合计红色字体样式  */
+.bc_num .bc_num_fr .bc_red {
+  font-size: 18px;
+  color: #e2231a;
+}
+/* 结算按钮 */
+.buycart .bc_probtn {
+  padding: 15px 0 55px 0;
+}
+.buycart .bc_probtn a {
+  float: right;
+  width: 160px;
+  height: 38px;
+  line-height: 38px;
+  background: #e2231a;
+  border: 1px solid #d9d8d6;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.buycart .bc_probtn a:active{
+  background: #c90000;
+}
+
+
+
+/* 无商品 */
+.buycart .bc_nopro {
+  padding: 80px 0 80px 336px;
+  width: 600px;
+  height: 150px;
+}
+/* 无商品 图片 */
+.buycart h3 {
+  height: 84px;
+  line-height: 84px;
+  padding-left: 110px;
+  background: url(../img/shopping_trolley/buycart.png) no-repeat -4px -66px;
+  font-size: 18px;
+  float: left;
+  font-weight: normal;
+}
+.bc_nopro .bc_no_btn {
+  float: left;
+  margin: 27px 0 0 10px;
+  width: 210px;
+}
+/* 按钮 */
+.bc_no_btn a{
+  display: inline-block;
+  width: 95px;
+  height: 30px;
+  line-height: 30px;
+  background: url(../img/shopping_trolley/buycart.png) -4px -163px;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+  margin: 0 4px;
+}
+
+/* logo */
+.top_logo{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.top_logo img:first-child{
+  float: left;
+}
+.top_logo img:last-child{
+  float: right;
+}

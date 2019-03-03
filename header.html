@@ -1,0 +1,388 @@
+<link rel="stylesheet" href="css/header.css">
+<!--顶部黑线-->
+<div>
+  <!--左上角logo-->
+  <div id="logo">
+    <a href="./index.html">
+      <img src="./img/top/logo_2.jpg" alt="联想商城">
+    </a>
+
+  </div>
+  <!--首页头部黑色部分-->
+  <div class="header_fix clearfix">
+    <div class="new_header" name="top">
+      <div id="header">
+        <a href="./index.html">
+          <img src="./img/top/logo_1.jpg" alt="联想商城" id="small_logo">
+        </a>
+        <div class="top_min_width">
+          <!--top-->
+          <div class="top_box">
+            <div class="top_cont">
+              <!--左上角6个小标签-->
+              <ul class="top_ul top_red" id="top-nav">
+                <li>
+                  <a href="./index.html">联想首页</a>
+                </li>
+                <li>
+                  <a href="./index.html">商城</a>
+                </li>
+                <li>
+                  <a href="javascript:;">社区</a>
+                </li>
+                <li>
+                  <a href="javascript:;">服务</a>
+                </li>
+                <li>
+                  <a href="javascript:;">资讯</a>
+                </li>
+                <li>
+                  <a href="javascript:;">门店</a>
+                </li>
+              </ul>
+              <!--手机版-->
+              <div class="top_link top_red">
+                <div class="top_title" ONCLICK="Window.open('');">
+                  手机版
+                  <a href="javascript:;" class="top_usepng top_down"></a>
+                  <a href="javascript:;" class="top_usepng top_up"></a>
+                </div>
+                <ul class="phone_ul">
+                  <li class="phone_d">
+                    <em class="phoneicon"></em>
+                    <p class="phoneul_code">联想客户端</p>
+                  </li>
+                </ul>
+              </div>
+              <!--商城快报-->
+              <div class="horn_ring"></div>
+            </div>
+          </div>
+          <!--第二层-->
+          <div class="header-main">
+            <div class="nav_index nav">
+              <div class="nav_box">
+                <ul>
+                  <li>
+                    <a href="javascript:;" class="nav_name">兑换中心</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="nav_name">私人订制</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="nav_name">极速到家</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="nav_name">合伙人</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="nav_name">以旧换新</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="nav_name">0元试用</a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" class="nav_name">Z码</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--右上角搜索栏-->
+            <div class="search">
+              <div class="logo_text">
+                <div class="search_box think_search_header">
+                  <div class="search_input_bg">
+                  </div>
+                  <a class="serch_box_img">
+                    <span></span>
+                  </a>
+                  <input type="text" placeholder="拯救者 Y7000 高色域版">
+                </div>
+              </div>
+            </div>
+            <!--购物车-->
+            <div class="top_login_r top_red">
+              <div class="top_login_title">
+                <a href="./shopping_trolley.html" class="home_cart"></a>
+                <span id="top_cart_count">0</span>
+              </div>
+            </div>
+            <!--登录注册-->
+            <!--登陆小人-->
+            <ul class="top_login top_red">
+              <li class="top_loginbtn">
+                <!--要建锚点-->
+                <a href="javascript:;" class="login blank"></a>
+              </li>
+              <!--未注册/未登录气泡-->
+              <li id="head_bubble"></li>
+            </ul>
+            <!--登陆跳转页面-->
+            <div class="top_phone top_username">
+              <!-- 上面的小红点 -->
+              <span class="top_msg_tipdot" id="top_msg_tipdot"></span>
+              <div class="yetlogin">
+                <a href="./user_homepage.html"></a>
+                <span class="yetlogin_icon"></span>
+              </div>
+              <ul>
+                <!-- 用户名称 -->
+                <li class="top_phone_title"></li>
+                <li>
+                  <a href="./user_homepage.html">我的商城</a>
+                </li>
+                <li style="position: relative">
+                  <a href="javascript:;">我的消息</a>
+                  <span class="top_msg_count" id="top_msg_count">0</span>
+                </li>
+                <li>
+                  <a href="javascript:;" class="logout">退出登录</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header_bottom"></div>
+  </div>
+</div>
+<script>
+  // 文件说明，为网页页首黑色横条随鼠标滚轮滚动上层隐藏，下层固定到页面上
+  //左上角的logo由长logo换为小logo
+  $().ready(function () {
+    //滚动定位
+    var logoicon = document.getElementById("logo");
+    var top_box = document.getElementsByClassName("top_box")[0];
+    var header_fix = document.getElementsByClassName("header_fix")[0];
+    $(window).scroll(() => {
+      var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+      // console.log(scrollTop);
+      //左上角logo滚动消失定位
+      if (scrollTop > 50) {
+        logoicon.style.display = "none";
+      } else {
+        logoicon.style.display = "block";
+      }
+      //左上角logo滚动显示定位
+      if (scrollTop > 50) {
+        small_logo.style.display = "block";
+      } else {
+        small_logo.style.display = "none";
+      }
+      //页头黑色搜索框主体
+      if (scrollTop > 50) {
+        header_fix.style.position = "fixed";
+        // console.log(scrollTop+"消失时显示");
+      } else {
+        header_fix.style.position = "relative";
+      }
+      //页头黑色搜索框上层
+      if (scrollTop > 50) {
+        top_box.style.display = "none";
+        // console.log(scrollTop+"消失时显示");
+      } else {
+        top_box.style.display = "block";
+      }
+    })
+  })
+</script>
+
+
+
+<!-- 登录悬浮窗 -->
+<link rel="stylesheet" href="css/login_interface.css">
+<!--登陆弹出框-->
+<div id="shadow" class="shadow" style="display: none;"></div>
+<div class="denglu_main2" id="denglu_main2" style="display: none;">
+  <a class="close" href="javascript:;"></a>
+  <!-- 登陆窗口 -->
+  <div class="login">
+    <!-- 右上角图标 -->
+    <div class="login_hd">
+      <!-- 登录方式转换图标 -->
+      <div class="login_switch">
+        <p class="login_scan_tip"></p>
+        <p class="login_static_tip"></p>
+      </div>
+      <!-- 扫码登录更安全 小图标 -->
+      <div class="login_tip">
+        <div class="poptip">
+          <!-- 小箭头 -->
+          <div class="poptip_arrow">
+            <em></em>
+            <span></span>
+          </div>
+          <!-- 内容 -->
+          <div class="poptip_content">
+            <p>
+              <i>扫码登录更安全</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 输入登录 -->
+    <div class="login_static" style="display: block;">
+      <div class="login_title">联想会员登录</div>
+      <!--普通登录-->
+      <div id="normal_login_box" class="login-content" style="display: block;">
+        <!-- 账号 -->
+        <div class="login_input login_input_uname ">
+          <input id="account" type="text" autocomplete="off" placeholder="邮箱/手机号码" class="input account" value="dingding">
+          <!-- 清空图标 -->
+          <i class="icon-clear icon-account"></i>
+        </div>
+        <!-- 密码 -->
+        <div class="login_input login_input_pwd ">
+          <input id="upwd" type="password" placeholder="密码" class="input pwd" value="123456789">
+        </div>
+      </div>
+      <!--快捷登录-->
+      <div id="fast_login_box" class="login-content" style="display: none;">
+        <!-- 手机号输入 -->
+        <div class="login_input">
+          <input id="account_f" type="text" autocomplete="off" placeholder="手机号码" class="input account_f">
+          <!-- 内容情况图标 -->
+          <i class="icon-clear icon-fast" style="display: block;"></i>
+        </div>
+        <!-- 滑块 -->
+        <div id="slider_f" class="slider">
+          <div class="ui-slider-wrap">
+            <!-- 文字 及 滑块目标图标 -->
+            <!-- 当验证成功时，修改HTMLinner内容，改为验证成功 -->
+            <div class="ui-slider-text ui-slider-no-select add-img">请按住滑块，拖动到指定位置</div>
+            <!-- 滑块 -->
+            <!-- 当验证成功时，滑块添加success属性 -->
+            <div class="ui-slider-btn init ui-slider-no-select"></div>
+            <!-- 摁住滑块拖动后 背景效果 -->
+            <div class="ui-slider-bg"></div>
+          </div>
+        </div>
+        <!-- 短信验证 -->
+        <div class="login_input clearfix ">
+          <!-- 左侧输入窗口 -->
+          <input type="text" class="captcha" placeholder="短信验证码">
+          <!-- 右侧按钮 -->
+          <a href="javascript:;" class="captcha_btn">获取验证码</a>
+        </div>
+      </div>
+      <!-- 手机号不能为空 -->
+      <!-- 快捷登录时 点击登录 触发 -->
+      <!-- 普通登录时 点击登录 触发 -->
+      <div class="error-container" style="display: none;">
+        <i class="icon-error"></i>
+        <p class="error-msg">账号不能为空</p>
+        <!-- 
+          用户名不正确
+          账号或密码错误
+          
+          账号不能为空
+          手机号不能为空
+          密码不能为空
+         -->
+      </div>
+      <!--自动登录-->
+      <div class="login_mains">
+        <input class="persistent" id="ps" checked="" type="checkbox" />
+        <label>自动登录</label>
+      </div>
+      <!--登录按钮-->
+      <a href="javascript:;" class="submit">登录</a>
+      <!-- 登录方式选项 -->
+      <div class="login_mains clearfix">
+        <a href="javascript:;" class="login_type login_fast btnCancle2" style="display: inline;">手机验证码快捷登录</a>
+        <a href="javascript:;" class="login_type login_account btnCancle1" style="display: none;">用户名密码登录</a>
+        <!-- 登录的其他选项 -->
+        <div class="login_others">
+          <a href="./register.html" class="regist_btn redhover">立即注册</a>
+          <a href="javascript:;" class="reset_btn redhover" style="margin-left: 7px;">忘记密码？</a>
+        </div>
+      </div>
+      <!-- 其他登录方式 -->
+      <div class="cooperation">
+        <!-- 其他登录方式 文字 -->
+        <div class="cooperation-title">
+          <span></span>
+          <em>其他登录方式</em>
+          <span></span>
+        </div>
+        <!-- 4个小图标 -->
+        <div class="cooperation_items clearfix">
+          <!-- qq -->
+          <a href="javascript:;" class="qq">
+            <i class="icon-type icon-qq"></i>
+          </a>
+          <!-- 微博 -->
+          <a href="javascript:;" class="wb">
+            <i class="icon-type icon-wb"></i>
+          </a>
+          <!-- 微信 -->
+          <a href="javascript:;" class="wx">
+            <i class="icon-type icon-wx"></i>
+          </a>
+          <!-- 支付宝 -->
+          <a href="javascript:;" class="zfb">
+            <i class="icon-type icon-zfb"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 扫码登录 -->
+    <div class="login_scan" style="display: none;">
+      <div class="login_title">
+        联想会员扫码登录
+      </div>
+      <!-- 扫码区域 -->
+      <div class="qrcode_mod">
+        <!-- 二维码区域 -->
+        <div class="qrcode_main">
+          <!-- 二维码 -->
+          <div class="qrcode_info">
+            <img class="qrcode_img" src="./img/login/show.jpg">
+          </div>
+          <!-- 二维码失效 -->
+          <!-- 点击刷新, .qrcode_error的display:none -->
+          <div class="qrcode_error">
+            <h6>二维码已失效</h6>
+            <a href="javascript:;" class="qrcode_refresh">刷新</a>
+          </div>
+        </div>
+        <!-- 文字区域 -->
+        <div class="qrcode_desc">
+          <p>
+            打开
+            <em>微信</em>
+            扫码登录
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/login.js"></script>
+<script>
+  // 点击查询按钮
+  $("#header>div>div:last-child>div:nth-child(2)>div>div>a")
+    .on("click", function () {
+      var $click = $(this);
+      var kwords = $click.next().val();
+      if (kwords.trim() !== "") {
+        location.href = `seach_page.html?kwords=${kwords}`;
+      }
+      // console.log(kwords)
+    })
+    // 键盘点击事件
+    // keyup,键盘按键抬起时
+    .next().keyup(function (e) {
+      if (e.keyCode == 13) {
+        $(this).prev().click()
+      }
+    });
+  if (location.search.indexOf("kwords=") != -1) {
+    $("#header>div>div:last-child>div:nth-child(2)>div>div>input").val(
+      decodeURIComponent(location.search.split("=")[1])
+    )
+  }
+</script>

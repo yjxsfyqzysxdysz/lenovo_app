@@ -1,0 +1,172 @@
+
+  <link rel="stylesheet" href="css/login_interface.css">
+  <!--登陆弹出框-->
+  <div id="ppMask" class="shadow" style="display: block;"></div>
+  <!--要建锚点-->
+  <div class="denglu_main2" id="denglu_main2" style="display: block;">
+    <a class="close" href="javascript:;"></a>
+    <!-- 登陆窗口 -->
+    <div class="login">
+      <!-- 右上角图标 -->
+      <div class="login_hd">
+        <!-- 登录方式转换图标 -->
+        <div class="login_switch">
+          <p class="login_scan_tip"></p>
+          <p class="login_static_tip"></p>
+        </div>
+        <!-- 扫码登录更安全 小图标 -->
+        <div class="login_tip">
+          <div class="poptip">
+            <!-- 小箭头 -->
+            <div class="poptip_arrow">
+              <em></em>
+              <span></span>
+            </div>
+            <!-- 内容 -->
+            <div class="poptip_content">
+              <p>
+                <i>扫码登录更安全</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 输入登录 -->
+      <div class="login_static" style="display: block;">
+        <div class="login_title">联想会员登录</div>
+        <!--普通登录-->
+        <div id="normal_login_box" class="login-content" style="display: none;">
+          <!-- 账号 -->
+          <div class="login_input login_input_uname ">
+            <input id="account" type="text" autocomplete="off" placeholder="邮箱/手机号码" class="input account">
+            <!-- 清空图标 -->
+            <i class="icon-clear icon-account"></i>
+          </div>
+          <!-- 密码 -->
+          <div class="login_input login_input_pwd ">
+            <input id="pwd" type="password" placeholder="密码" class="input pwd">
+          </div>
+        </div>
+        <!--快捷登录-->
+        <div id="fast_login_box" class="login-content" style="display: block;">
+          <!-- 手机号输入 -->
+          <div class="login_input">
+            <input id="account_f" type="text" autocomplete="off" placeholder="手机号码" class="input account_f">
+            <!-- 内容情况图标 -->
+            <i class="icon-clear icon-fast" style="display: block;"></i>
+          </div>
+          <!-- 滑块 -->
+          <div id="slider_f" class="slider">
+            <div class="ui-slider-wrap">
+              <!-- 文字 及 滑块目标图标 -->
+              <!-- 当验证成功时，修改HTMLinner内容，改为验证成功 -->
+              <div class="ui-slider-text ui-slider-no-select add-img">请按住滑块，拖动到指定位置</div>
+              <!-- 滑块 -->
+              <!-- 当验证成功时，滑块添加success属性 -->
+              <div class="ui-slider-btn init ui-slider-no-select"></div>
+              <!-- 摁住滑块拖动后 背景效果 -->
+              <div class="ui-slider-bg"></div>
+            </div>
+          </div>
+          <!-- 短信验证 -->
+          <div class="login_input clearfix ">
+            <!-- 左侧输入窗口 -->
+            <input type="text" class="captcha" placeholder="短信验证码">
+            <!-- 右侧按钮 -->
+            <a href="javascript:;" class="captcha_btn">获取验证码</a>
+          </div>
+        </div>
+        <!-- 手机号不能为空 -->
+        <!-- 快捷登录时 点击登录 触发 -->
+        <!-- 普通登录时 点击登录 触发 -->
+        <div class="error-container" style="display: block;">
+          <i class="icon-error"></i>
+          <p class="error-msg">账号不能为空</p>
+          <!-- 
+            用户名不正确
+            账号或密码错误
+            
+            账号不能为空
+            手机号不能为空
+            密码不能为空
+           -->
+        </div>
+        <!--自动登录-->
+        <div class="login_mains">
+          <input class="persistent" id="ps" checked="" type="checkbox" />
+          <label>自动登录</label>
+        </div>
+        <!--登录按钮-->
+        <a href="javascript:;" class="submit">登录</a>
+        <!-- 登录方式选项 -->
+        <div class="login_mains clearfix">
+          <a href="javascript:;" class="login_type login_fast btnCancle2" style="display: none;">手机验证码快捷登录</a>
+          <a href="javascript:;" class="login_type login_account btnCancle1" style="display: inline;">用户名密码登录</a>
+          <!-- 登录的其他选项 -->
+          <div class="login_others">
+            <a href="./register.html" class="regist_btn redhover">立即注册</a>
+            <a href="javascript:;" class="reset_btn redhover" style="margin-left: 7px;">忘记密码？</a>
+          </div>
+        </div>
+        <!-- 其他登录方式 -->
+        <div class="cooperation">
+          <!-- 其他登录方式 文字 -->
+          <div class="cooperation-title">
+            <span></span>
+            <em>其他登录方式</em>
+            <span></span>
+          </div>
+          <!-- 4个小图标 -->
+          <div class="cooperation_items clearfix">
+            <!-- qq -->
+            <a href="javascript:;" class="qq">
+              <i class="icon-type icon-qq"></i>
+            </a>
+            <!-- 微博 -->
+            <a href="javascript:;" class="wb">
+              <i class="icon-type icon-wb"></i>
+            </a>
+            <!-- 微信 -->
+            <a href="javascript:;" class="wx">
+              <i class="icon-type icon-wx"></i>
+            </a>
+            <!-- 支付宝 -->
+            <a href="javascript:;" class="zfb">
+              <i class="icon-type icon-zfb"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 扫码登录 -->
+      <div class="login_scan" style="display: none;">
+        <div class="login_title">
+          联想会员扫码登录
+        </div>
+        <!-- 扫码区域 -->
+        <div class="qrcode_mod">
+          <!-- 二维码区域 -->
+          <div class="qrcode_main">
+            <!-- 二维码 -->
+            <div class="qrcode_info">
+              <img class="qrcode_img" src="./img/login/show.jpg">
+            </div>
+            <!-- 二维码失效 -->
+            <!-- 点击刷新, .qrcode_error的display:none -->
+            <div class="qrcode_error">
+              <h6>二维码已失效</h6>
+              <a href="javascript:;" class="qrcode_refresh">刷新</a>
+            </div>
+          </div>
+          <!-- 文字区域 -->
+          <div class="qrcode_desc">
+            <p>
+              打开
+              <em>微信</em>
+              扫码登录
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
